@@ -1,6 +1,6 @@
 {
   "name": "mk-svg-tree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "draw a directory tree using svg",
   "main": "./lib/tree.js",
   "repository": {
