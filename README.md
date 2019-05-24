@@ -56,5 +56,8 @@
 
   data:要展示的数据。子节点取children属性  
 
+# notice：
+    expand_icon，collapse_icon，directory_open_icon，directory_close_icon，leaf_node_icon，为节点图标  
+    若想使用自定义图标 使用SVG symbol. 传入id给对应的参数
 # effect
   ![1558723124949](./image/1558723124949.png)
