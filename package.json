@@ -1,5 +1,5 @@
 {
-  "name": "svg-tree",
+  "name": "mk-svg-tree",
   "version": "0.0.1",
   "description": "draw a directory tree using svg",
   "main": "./lib/tree.js",

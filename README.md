@@ -1,14 +1,14 @@
-# svg-tree
+# mk-svg-tree
 
 # install
 
 ```
-  npm install svg-tree
+  npm install mk-svg-tree
 ```
 # usage
 
 ```
-  import Tree from 'svg-tree'
+  import Tree from 'mk-svg-tree'
 
   new Tree({
     container:'tree',
@@ -55,6 +55,6 @@
       node_click: 节点点击事件 参数为(node,index) node点击的节点数据,index父级目录下的下标  
 
   data:要展示的数据。子节点取children属性  
-  
+
 # effect
   ![1558723124949](./image/1558723124949.png)
