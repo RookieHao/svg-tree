@@ -1,0 +1,20 @@
+{
+  "name": "svg-tree",
+  "version": "0.0.1",
+  "description": "draw a directory tree using svg",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RookieHao/svg-tree.git"
+  },
+  "keywords": [
+    "tree",
+    "svg"
+  ],
+  "author": "RookieHao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RookieHao/svg-tree/issues"
+  },
+  "homepage": "https://github.com/RookieHao/svg-tree#readme"
+}
