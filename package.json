@@ -2,7 +2,7 @@
   "name": "svg-tree",
   "version": "0.0.1",
   "description": "draw a directory tree using svg",
-  "main": "./index.js",
+  "main": "./lib/tree.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/RookieHao/svg-tree.git"
