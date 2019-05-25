@@ -1,8 +1,9 @@
 {
   "name": "mk-svg-tree",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "draw a directory tree using svg",
-  "main": "./lib/tree.js",
+  "main": "./dist/index.js",
+  "module": "./lib/tree.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/RookieHao/svg-tree.git"
@@ -11,10 +12,17 @@
     "tree",
     "svg"
   ],
+  "scripts": {
+    "build": "webpack ./webpack.config.js"
+  },
   "author": "RookieHao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RookieHao/svg-tree/issues"
   },
-  "homepage": "https://github.com/RookieHao/svg-tree#readme"
+  "homepage": "https://github.com/RookieHao/svg-tree#readme",
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
 }
