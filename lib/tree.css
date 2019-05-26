@@ -1,0 +1,26 @@
+
+.tree-text{
+  fill:#fff;
+  font-size: 14px;
+}
+.tree-rect{
+  fill:#162231;
+}
+.tree-group:hover .tree-rect{
+  fill:#bae7ff;
+}
+.tree-group:hover .tree-text{
+  fill:#333;
+}
+.tree-line{
+  stroke:#52AFF8;
+  stroke-width:1;
+  stroke-dasharray:1,1;
+}
+.tree-icon-icon-plus-square-fill,
+.tree-icon-icon-minus-square-fill,
+.tree-icon-icon-folder-open,
+.tree-icon-icon-folder1,
+.tree-icon-icon-file{
+  fill:#4A90E2;
+}

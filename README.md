@@ -14,16 +14,13 @@
     container:'tree',
     parameter:{
       node_margin: 5,
-      node_height: 20,
       node_field: 'title',
-      icon_size: 15,
       icon_margin: 5,
       expand_icon: 'icon-plus-square-fill',
       collapse_icon: 'icon-minus-square-fill',
       directory_open_icon: 'icon-folder-open',
       directory_close_icon: 'icon-folder1',
-      leaf_node_icon: 'icon-file',
-      node_click(node){}
+      leaf_node_icon: 'icon-file'
     },
     data:[]
   })
@@ -34,11 +31,7 @@
 
       node_margin: 节点间的上下间距 默认: 5  
 
-      node_height: 节点高度 默认: 20  
-
       node_field: 节点显示的字段名 默认: 'title'  
-
-      icon_size: 节点图标大小 默认: 15px  
 
       icon_margin: 图标间隔 默认: 5  
 
@@ -52,12 +45,21 @@
 
       leaf_node_icon: 叶子节点图标  
 
-      node_click: 节点点击事件 参数为(node,index) node点击的节点数据,index父级目录下的下标  
 
   data:要展示的数据。子节点取children属性  
 
+# event
+  ```
+  nodeclick: 节点点击事件，参数是当前节点和其在父元素下的位置。 例如： 
+    mkTree.addEventListener('nodeclick',(nodex,index)=>{
+      /** dosomething */
+    })
+  expandChange:展开收起事件，参数是当前展开/收起的节点数据和状态。例如：
+    mkTree.addEventListener('expandChange',(nodex,expanded)=>{
+      /** dosomething */
+    })
+  ```
 # notice：
-    expand_icon，collapse_icon，directory_open_icon，directory_close_icon，leaf_node_icon，为节点图标  
-    若想使用自定义图标 使用SVG symbol. 传入id给对应的参数
+    节点图标若想使用自定义图标 使用SVG symbol. 传入id给对应的参数
 # effect
   ![1558723124949](./image/1558723124949.png)
