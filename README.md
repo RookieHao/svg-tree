@@ -2,15 +2,25 @@
 
 # install
 
+  Using npm:
 ```
   npm install mk-svg-tree
+
+  import mkTree from 'mk-svg-tree'
+  import 'mk-svg-tree/dist/tree.css'
+```
+
+  Using cdn:
+```
+  <script src="https://unpkg.com/mk-svg-tree/dist/tree.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mk-svg-tree/dist/tree.css">
 ```
 # usage
 
 ```
-  import Tree from 'mk-svg-tree'
 
-  new Tree({
+
+  new mkTree({
     container:'tree',
     parameter:{
       node_margin: 5,
