@@ -59,17 +59,16 @@
   data:要展示的数据。子节点取children属性  
 
 # event
-  ```
-  nodeclick: 节点点击事件，参数是当前节点和其在父元素下的位置。 例如： 
-    mkTree.addEventListener('nodeclick',(nodex,index)=>{
-      /** dosomething */
-    })
+```
+  nodeclick: 节点点击事件，参数是当前节点和其在父元素下的位置。 例如：
+```
+  ![20190527102332.png](https://i.loli.net/2019/05/27/5ceb4a2683f7497731.png)
+```
   expandChange:展开收起事件，参数是当前展开/收起的节点数据和状态。例如：
-    mkTree.addEventListener('expandChange',(nodex,expanded)=>{
-      /** dosomething */
-    })
-  ```
+```
+  ![20190527102245.png](https://i.loli.net/2019/05/27/5ceb49f7333f025272.png)
+  
 # notice：
     节点图标若想使用自定义图标 使用SVG symbol. 传入id给对应的参数
 # effect
-  ![1558723124949](./image/1558723124949.png)
+  ![20190527095843.png](https://i.loli.net/2019/05/27/5ceb445575a2128220.png)
