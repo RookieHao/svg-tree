@@ -1,3 +1,6 @@
 node_modules
 test.html
+.babelrc
+package.json
 package-lock.json
+webpack.config.js
