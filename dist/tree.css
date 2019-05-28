@@ -1,10 +1,10 @@
 
 .tree-text{
-  fill:#fff;
+  fill:#333;
   font-size: 14px;
 }
 .tree-rect{
-  fill:#162231;
+  fill:transparent;
 }
 .tree-group:hover .tree-rect{
   fill:#bae7ff;
