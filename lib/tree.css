@@ -6,11 +6,20 @@
 .tree-rect{
   fill:transparent;
 }
-.tree-rect.active-node{
+.inner-group.active-node .tree-rect{
   fill:#BAE7FF;
 }
-.tree-text.active-node{
+.inner-group.active-node .tree-text{
   fill:#fff;
+}
+.inner-group{
+  user-select: none;
+}
+.inner-group:not(.active-node):hover .tree-rect{
+  fill:#E6F7FF;
+}
+.inner-group:not(.active-node):hover .tree-text{
+  fill:#333;
 }
 .tree-group.active-group .child-group{
   animation: group_animation 0.2s linear;
@@ -28,12 +37,6 @@
     /* transform: scale(1); */
     opacity: 1;
   }
-}
-.inner-group:hover .tree-rect:not(.active_node){
-  fill:#E6F7FF;
-}
-.inner-group:hover .tree-text:not(.active_node){
-  fill:#333;
 }
 .tree-line{
   stroke:#52AFF8;
