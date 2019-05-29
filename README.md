@@ -19,13 +19,15 @@
 
 ```
 
-
+  <div id="tree"></div>
+  
   new mkTree({
     container:'tree',
     parameter:{
       node_margin: 5,
       node_field: 'title',
       icon_margin: 5,
+      child_field: 'children',
       expand_icon: 'icon-plus-square-fill',
       collapse_icon: 'icon-minus-square-fill',
       directory_open_icon: 'icon-folder-open',
