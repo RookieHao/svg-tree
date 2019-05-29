@@ -35,15 +35,17 @@
     data:[]
   })
 ```
-  container:一个可以嵌入svg的容器，可以传入容器id或者DOM元素  
+  container:一个可以嵌入svg的容器，可以传入容器id或者DOM元素.省略时默认是id为tree的容器 
 
-  parameter:构造参数。  
+  parameter:构造参数。 不传时取默认值
 
       node_margin: 节点间的上下间距 默认: 5  
 
-      node_field: 节点显示的字段名 默认: 'title'  
-
       icon_margin: 图标间隔 默认: 5  
+
+      node_field: 节点显示的字段名 默认: 'title'
+
+      child_field: 子节点字段名 默认: 'children'
 
       expand_icon: 展开图标  
 
@@ -56,7 +58,7 @@
       leaf_node_icon: 叶子节点图标  
 
 
-  data:要展示的数据。子节点取children属性  
+  data:必填。要展示的数据。
 
 # event
 ```
