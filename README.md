@@ -1,7 +1,11 @@
 # mk-svg-tree
 
-# install
-
+[安装](#INSTALL)  
+[使用方法](#USAGE)   
+[事件](#EVENT)  
+[内置样式](#BUILT-IN-STYLE)  
+[效果图](#EFFECT)
+# INSTALL
   Using npm:
 ```
   npm install mk-svg-tree
@@ -15,9 +19,9 @@
   <script src="https://unpkg.com/mk-svg-tree/dist/tree.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/mk-svg-tree/dist/tree.css">
 ```
-# usage
+# USAGE
 
-```
+```js
 
   <div id="tree"></div>
   
@@ -62,17 +66,92 @@
 
   data:必填。要展示的数据。
 
-# event
-```
+[回到顶部](#)
+# Event
   nodeclick: 节点点击事件，参数是当前节点和其在父元素下的位置。 例如：
-```
+
   ![20190527102332.png](https://i.loli.net/2019/05/27/5ceb4a2683f7497731.png)
-```
+
   expandChange:展开收起事件，参数是当前展开/收起的节点数据和状态。例如：
-```
+
   ![20190527102245.png](https://i.loli.net/2019/05/27/5ceb49f7333f025272.png)
   
-# notice：
+# BUILT-IN STYLE
+```css
+/* 节点 */
+.inner-group {
+  user-select: none;
+}
+
+/* 节点字体 */
+.tree-text {
+  fill: #333;
+  font-size: 14px;
+}
+
+/* 节点背景 */
+.tree-rect {
+  fill: transparent;
+}
+
+/* 选中节点背景 */
+.inner-group.active-node .tree-rect {
+  fill: #BAE7FF;
+}
+
+/* 选中节点字体 */
+.inner-group.active-node .tree-text {
+  fill: #fff;
+}
+
+/* 节点:hover背景 */
+.inner-group:not(.active-node):hover .tree-rect {
+  fill: #E6F7FF;
+}
+
+/* 节点:hover字体 */
+.inner-group:not(.active-node):hover .tree-text {
+  fill: #333;
+}
+
+/* 线条样式 */
+.tree-line {
+  stroke: #52AFF8;
+  stroke-width: 1;
+  stroke-dasharray: 1, 1;
+}
+
+/* 图标样式 */
+.tree-icon-icon-plus-square-fill,
+.tree-icon-icon-minus-square-fill,
+.tree-icon-icon-folder-open,
+.tree-icon-icon-folder1,
+.tree-icon-icon-file {
+  fill: #4A90E2;
+}
+
+/* 子节点 */
+.tree-group.active-group .child-group {
+  animation: group_animation 0.2s linear;
+}
+
+@keyframes group_animation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+```
+
+[回到顶部](#)
+# NOTICE
     节点图标若想使用自定义图标 使用SVG symbol. 传入id给对应的参数
-# effect
+# EFFECT
   ![20190527095843.png](https://i.loli.net/2019/05/27/5ceb445575a2128220.png)

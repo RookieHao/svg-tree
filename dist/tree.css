@@ -1,52 +1,73 @@
-
-.tree-text{
-  fill:#333;
+/* 节点字体 */
+.tree-text {
+  fill: #333;
   font-size: 14px;
 }
-.tree-rect{
-  fill:transparent;
+
+/* 节点背景 */
+.tree-rect {
+  fill: transparent;
 }
-.inner-group{
+
+/* 节点 */
+.inner-group {
   user-select: none;
 }
-.inner-group.active-node .tree-rect{
-  fill:#BAE7FF;
+
+/* 选中节点背景 */
+.inner-group.active-node .tree-rect {
+  fill: #BAE7FF;
 }
-.inner-group.active-node .tree-text{
-  fill:#fff;
+
+/* 选中节点字体 */
+.inner-group.active-node .tree-text {
+  fill: #fff;
 }
-.inner-group:not(.active-node):hover .tree-rect{
-  fill:#E6F7FF;
+
+/* 节点:hover背景 */
+.inner-group:not(.active-node):hover .tree-rect {
+  fill: #E6F7FF;
 }
-.inner-group:not(.active-node):hover .tree-text{
-  fill:#333;
+
+/* 节点:hover字体 */
+.inner-group:not(.active-node):hover .tree-text {
+  fill: #333;
 }
-.tree-group.active-group .child-group{
-  animation: group_animation 0.2s linear;
+
+/* 线条样式 */
+.tree-line {
+  stroke: #52AFF8;
+  stroke-width: 1;
+  stroke-dasharray: 1, 1;
 }
-@keyframes group_animation {
-  0%{
-    /* transform: scale(0); */
-    opacity: 0.1;
-  }
-  50%{
-    /* transform: scale(0.5); */
-    opacity: 0.5;
-  }
-  100%{
-    /* transform: scale(1); */
-    opacity: 1;
-  }
-}
-.tree-line{
-  stroke:#52AFF8;
-  stroke-width:1;
-  stroke-dasharray:1,1;
-}
+
+/* 图标样式 */
 .tree-icon-icon-plus-square-fill,
 .tree-icon-icon-minus-square-fill,
 .tree-icon-icon-folder-open,
 .tree-icon-icon-folder1,
-.tree-icon-icon-file{
-  fill:#4A90E2;
+.tree-icon-icon-file {
+  fill: #4A90E2;
+}
+
+/* 子节点 */
+.tree-group.active-group .child-group {
+  animation: group_animation 0.2s linear;
+}
+
+@keyframes group_animation {
+  0% {
+    /* transform: scale(0); */
+    opacity: 0.1;
+  }
+
+  50% {
+    /* transform: scale(0.5); */
+    opacity: 0.5;
+  }
+
+  100% {
+    /* transform: scale(1); */
+    opacity: 1;
+  }
 }
