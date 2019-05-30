@@ -6,14 +6,14 @@
 .tree-rect{
   fill:transparent;
 }
+.inner-group{
+  user-select: none;
+}
 .inner-group.active-node .tree-rect{
   fill:#BAE7FF;
 }
 .inner-group.active-node .tree-text{
   fill:#fff;
-}
-.inner-group{
-  user-select: none;
 }
 .inner-group:not(.active-node):hover .tree-rect{
   fill:#E6F7FF;
