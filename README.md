@@ -1,7 +1,8 @@
 # mk-svg-tree
 
 [安装](#INSTALL)  
-[使用方法](#USAGE)   
+[使用方法](#USAGE)  
+[实例方法](#Method)  
 [事件](#EVENT)  
 [内置样式](#BUILT-IN-STYLE)  
 [效果图](#EFFECT)
@@ -22,10 +23,9 @@
 # USAGE
 
 ```js
-
   <div id="tree"></div>
   
-  new mkTree({
+  let mk_tree = new mkTree({
     container:'tree',
     parameter:{
       node_margin: 5,
@@ -66,15 +66,35 @@
 
   data:必填。要展示的数据。
 
+
+# Method
+
+```js
+  mk_tree.Init(data) // 数据更新，重新渲染
+
+  mk_tree.expandAll() // 一键展开
+
+  mk_tree.collaspseAll() // 一键收起
+```
+
+
 [回到顶部](#)
 # Event
   nodeclick: 节点点击事件，参数是当前节点和其在父元素下的位置。 例如：
 
-  ![20190527102332.png](https://i.loli.net/2019/05/27/5ceb4a2683f7497731.png)
+```js
+  mk_tree.addEventListener('nodeclick',(node,index)=>{
+    /** dosomething */
+  })
+```
 
   expandChange:展开收起事件，参数是当前展开/收起的节点数据和状态。例如：
 
-  ![20190527102245.png](https://i.loli.net/2019/05/27/5ceb49f7333f025272.png)
+```js
+  mk_tree.addEventListener('expandChange',(...args)=>{
+    /** dosomething */
+  })
+```
   
 # BUILT-IN STYLE
 ```css
